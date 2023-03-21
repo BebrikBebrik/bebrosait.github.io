@@ -1,3 +1,4 @@
 git init
 git add index.html
 git commit -m "First commit"
+git remote add origin
