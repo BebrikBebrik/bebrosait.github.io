@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <h1>Женя или кто там, зарегайтесь на почту!</h1>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="button" value="Входи ёпт" onclick="login()">
+    </form>
+
+    <script>
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Проверяем учетные данные
+        if (email == "example@gmail.com" && password == "password") {
+          // Если учетные данные верны, перенаправляем пользователя на страницу Gmail
+          window.location.href = "https://mail.google.com/";
+        } else {
+          alert("Чё, не на свой акк заходишь?. А ну попробуй ещё.");
+        }
+      }
+    </script>
+  </body>
+</html>
